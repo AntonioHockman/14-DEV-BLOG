@@ -1,0 +1,19 @@
+<div class="container">
+  <div class=" col-md-10">
+
+  {{#each posts }}
+    <div class="col-md-5">
+      <a href="/post/{{id}}">
+      {{title}} 
+      </a>
+        
+    </div>
+    <div class="col-md-7">
+      <p>
+        Posted by
+        {{user.name}} on {{date_created}}
+      </p>
+    </div>
+  {{/each}}
+</div>
+  </div>
